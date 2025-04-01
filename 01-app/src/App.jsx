@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <h1></h1>
+      <button href="https://google.com">click me </button>
     </>
   )
 }
