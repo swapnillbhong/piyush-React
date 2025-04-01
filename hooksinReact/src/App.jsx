@@ -4,6 +4,8 @@ import { useEffect , useState } from 'react'
 
 // import Mycomponents from './Components/Mycomponents'
 
+import Timer from './Components/Timer'
+
 function App() {
 
   // const [isVisible, setVisible]= useState(true)
@@ -16,6 +18,7 @@ function App() {
     <>
       {/* {isVisible?<Mycomponents/>: <></>} 
       <button onClick={()=> setVisible (!isVisible)}> Toggle</button> */}
+      <Timer/>
     </>
   )
 }
