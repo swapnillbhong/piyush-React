@@ -16,12 +16,12 @@ function App() {
     
     <div className='todo-container'>
       <Header/>
-      <TodoItems/>
-      <TodoItems/>
-      <TodoItems/>
-      <TodoItems/>
-      <TodoItems/>
-      <AddButton/>
+      <TodoItems text="Weakup"/>
+      <TodoItems text="Get Ready for Office"/>
+      <TodoItems text="Code"/>
+      <TodoItems text="Dinner"/>
+      <TodoItems text="Sleep"/>
+      <AddButton />
       </div>
   </main>
     
