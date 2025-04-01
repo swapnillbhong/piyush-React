@@ -12,12 +12,18 @@ function App() {
  
 
   return (
-  
-      <div className='todo-container'>
+  <main className='main-container '>
+    
+    <div className='todo-container'>
       <Header/>
+      <TodoItems/>
+      <TodoItems/>
+      <TodoItems/>
+      <TodoItems/>
       <TodoItems/>
       <AddButton/>
       </div>
+  </main>
     
   )
 }

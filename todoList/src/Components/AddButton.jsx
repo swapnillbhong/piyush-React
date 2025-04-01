@@ -1,6 +1,6 @@
 const AddButton=()=>
 {
-    return <button>Add ToDO</button>
+    return <button className="todo-btn">Add TODO</button>
 }
 
 export default AddButton
