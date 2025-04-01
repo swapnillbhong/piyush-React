@@ -5,6 +5,7 @@ import './App.css'
 import Header from './Components/header'
 import TodoItems from './Components/todoItem'
 import AddButton from './Components/AddButton'
+import { CounterComponent } from './Components/CounterComponent'
 
 
 
@@ -15,8 +16,9 @@ function App() {
   <main className='main-container '>
     
     <div className='todo-container'>
-      <Header/>
-      <TodoItems text="Weakup"/>
+      <CounterComponent/>
+      <Header title="TODO List"/>
+      <TodoItems complete={true} text="Weakup"/>
       <TodoItems text="Get Ready for Office"/>
       <TodoItems text="Code"/>
       <TodoItems text="Dinner"/>

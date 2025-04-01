@@ -6,7 +6,7 @@ const TodoItems=(wishList)=>
         <>
             <li className="todo-item">
             <span>
-           { wishList.completec?<></>:<input type="checkbox"/>}
+           { wishList.complete?<></>:<input type="checkbox"/>}
             <span className="todo-item-text">{wishList.text}</span>
             </span>
             <p>...</p>
