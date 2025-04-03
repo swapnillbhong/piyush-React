@@ -24,7 +24,7 @@ const Board = () => {
         const [ a, b, c] =  logic;
         if(state[a] !==null && state[a]=== state[b]  && state[a] === state[c]) 
         {
-          return true;
+          return state[a];
         }
        }
         return false;
@@ -39,10 +39,13 @@ const Board = () => {
       setIsXTurn(!isXTurn);
     }
 
+    const handleReset = () =>{
+      setState(Array(9).fill(null));
+    }
 
   return (
     <div className="Board-container bor ">
-        {isWinner?(<>Someone won</>):(<>
+        {isWinner?(<>{isWinner} won the game <button onClick={handleReset}> play Again</button> </>):(<>
           <div className="Board-row bor">
             <Square onClick={()=> handleClick(0)} value={state[0]}/>
             <Square onClick={()=> handleClick(1)} value={state[1]}/>
