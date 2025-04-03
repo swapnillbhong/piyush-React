@@ -44,9 +44,12 @@ const Board = () => {
     }
 
   return (
+    <>
+    <h4>Player {isXTurn ? 'X':'O'} Please Move </h4>
     <div className="Board-container bor ">
         {isWinner?(<>{isWinner} won the game <button onClick={handleReset}> play Again</button> </>):(<>
           <div className="Board-row bor">
+            
             <Square onClick={()=> handleClick(0)} value={state[0]}/>
             <Square onClick={()=> handleClick(1)} value={state[1]}/>
             <Square onClick={()=> handleClick(2)} value={state[2]}/>
@@ -63,7 +66,9 @@ const Board = () => {
         </div>
         </>)}
     </div>
-  )
+  
+    </>)
+  
 }
 
 export default Board
