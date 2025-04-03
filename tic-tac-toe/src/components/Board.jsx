@@ -33,6 +33,10 @@ const Board = () => {
     const isWinner =CheckWinner();
 
     const handleClick =(index) =>{
+
+      if(state[index] !== null){
+        return;
+      }
       const copyState = [...state];
       copyState[index] = isXTurn ? "X" :"O";
       setState(copyState);
