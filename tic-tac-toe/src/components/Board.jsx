@@ -6,8 +6,12 @@ const Board = () => {
 
     const [state,setState] = useState(Array(9).fill(null));
   
+    const [isXTurn, setIsXTurn] = useState(true);
+
     const handleClick =(index) =>{
-        console.log("click on index",index)
+      const copyState = [...state];
+      copyState[index] = isXTurn ? "'X'" :"'0'";
+      setState(copyState);
     }
 
 
